@@ -1,0 +1,53 @@
+{
+  "name": "@xiaozuzu/mcp-tiben-solver",
+  "version": "1.0.17",
+  "description": "MCP server that integrates with Tiben backend API to solve K-12 school problems",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-tiben-solver": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.cnb.cool/xiaozuzu_dev/xiaozuzu/-/packages/",
+    "@xiaozuzu:registry": "https://npm.cnb.cool/xiaozuzu_dev/xiaozuzu/-/packages/"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "node test-server.js",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "tiben",
+    "education",
+    "k12",
+    "ai",
+    "problem-solving"
+  ],
+  "author": "Tiben Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaozuzu/mcp-tiben-solver.git"
+  },
+  "homepage": "https://tiben.zocenet.com",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.4",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}

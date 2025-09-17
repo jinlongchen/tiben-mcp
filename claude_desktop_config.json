@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "coze-solver": {
+      "command": "node",
+      "args": ["/Users/qingchen/work/AI/mcp/coze/tiben-mcp/dist/index.js"],
+      "env": {
+        "COZE_API_TOKEN": "sat_APoinCNtkDBziEv5YDzyBCmADP9xcSybR8wIGZVUtPVrSdyR5qof4QQeEmnep0lT",
+        "COZE_WORKFLOW_ID": "7549035394530377769",
+        "COZE_API_BASE": "https://api.coze.com"
+      }
+    }
+  }
+}

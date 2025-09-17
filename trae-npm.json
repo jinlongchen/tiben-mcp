@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "错题本": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@xiaozuzu/mcp-tiben-solver"
+      ],
+      "env": {
+        "KEY": ""
+      }
+    }
+  }
+}
